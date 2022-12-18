@@ -7,7 +7,7 @@
 
     <style></style>
 
-    <link rel="stylesheet" href="/style/stilus.css">
+    <link rel="stylesheet" href="style/stilus.css">
     <script></script>
   
   </head>
@@ -18,7 +18,7 @@
     <div class="szoveg">
         <table style="width:800px" >
             <tr>
-            <td> <img src="kep.jpg" width="150" style="margin-right: 50px;"> </td>
+            <td> <img src="img/kep.jpg" width="150" style="margin-right: 50px;"> </td>
             <td>Ötven év telt el azóta, hogy ez az Alapítvány létrejött, ötven év, és ezalatt az Alapítvány tagjai nem is sejtették, hogy mivégre dolgoznak.
                 Szükség volt rá, hogy sötétben maradjanak, de most már világosságot lehet gyújtani.
                 Hogy ezzel kezdjem: az Enciklopédia Alapítvány egy humbug, mindig is az volt!
@@ -28,17 +28,43 @@
           </table> 
     </div>
 
-    <table>
+    <div class="cim"><h1>Paralelogramma területe</h1></div>
+
+    <div class ="szoveg">
+    <table stlye="width 550px">
       <tr>
-      <td> <input type="text" name="a" id="oldal" placeholder="Az oldal hossza"> </td>
+      <td> <input type="number" name="a" id="oldal" placeholder="Az oldal hossza"> </td>
       </tr>
       <tr>
-      <td> <input type="text" name="b" id="magassag" placeholder="Magasság hossza"> </td>
+      <td> <input type="number" name="b" id="magassag" placeholder="Magasság hossza"> </td>
       </tr>
       <tr>
-      <td> <button onclick= "paralelog()" >Submit</button> </td>
+      <td> <button onclick= "paralelogram()" >Kiszámolás</button> </td>
       </tr>
+    </table>
+    </div>
+    <div class="szoveg" id="Para"></div>
+
+    <div class ="szoveg">
+      <table stlye="width 550px">
+        <tr>
+        <td> <input type="number" name="c" id="coldal" placeholder="Az oldal hossza"> </td>
+        </tr>
+        <tr>
+        <td> <input type="number" name="d" id="doldal" placeholder="Magasság hossza"> </td>
+        </tr>
+        <tr>
+        <td> <input type="degree" name="e" id="szog" placeholder="Magasság hossza"> </td>
+        </tr>
+        <tr>
+        <td> <button onclick= "paralelogram2()" >Kiszámolás</button> </td>
+        </tr>
       </table>
+      </div>
+      <div class="szoveg" id="Para2"></div> 
+    
+    <script src="script/paralelogramma.js"></script>
 
   </body>
-</html>
+
+  </html>
