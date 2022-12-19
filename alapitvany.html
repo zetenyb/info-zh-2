@@ -16,7 +16,7 @@
     <div class="cim"><h1>Alapítvány</h1> </div>
 
     <div class="szoveg">
-        <table style="width:800px" >
+        <table style="width:900px" >
             <tr>
             <td> <img src="img/kep.jpg" width="150" style="margin-right: 50px;"> </td>
             <td>Ötven év telt el azóta, hogy ez az Alapítvány létrejött, ötven év, és ezalatt az Alapítvány tagjai nem is sejtették, hogy mivégre dolgoznak.
@@ -44,17 +44,17 @@
     </table>
     </div>
     <div class="szoveg" id="Para"></div>
-
+    <p></p>
     <div class ="szoveg">
       <table stlye="width 550px">
         <tr>
         <td> <input type="number" name="c" id="coldal" placeholder="Az oldal hossza"> </td>
         </tr>
         <tr>
-        <td> <input type="number" name="d" id="doldal" placeholder="Magasság hossza"> </td>
+        <td> <input type="number" name="d" id="doldal" placeholder="Másik oldal hossza"> </td>
         </tr>
         <tr>
-        <td> <input type="degree" name="e" id="szog" placeholder="Magasság hossza"> </td>
+        <td> <input type="degree" name="e" id="szog" placeholder="Köztük lévő szög"> </td>
         </tr>
         <tr>
         <td> <button onclick= "paralelogram2()" >Kiszámolás</button> </td>
@@ -64,6 +64,34 @@
       <div class="szoveg" id="Para2"></div> 
     
     <script src="script/paralelogramma.js"></script>
+
+    <div class="cim"><h1>Random kimenet</h1></div> 
+ 
+    <div class ="szoveg">
+      <table stlye="width 550px">
+            <tr>
+            <td> <input type="string" name="1" id="egy" placeholder="Első string"> </td>
+            </tr>
+            <tr>
+            <td> <input type="string" name="2" id="ketto" placeholder="Első string"> </td>
+            </tr>        
+            <tr>
+            <td> <input type="string" name="3" id="harom" placeholder="Első string"> </td>
+            </tr>        
+            <tr>
+            <td> <input type="string" name="4" id="negy" placeholder="Első string"> </td>
+            </tr>        
+            <tr>
+            <td> <input type="string" name="5" id="ot" placeholder="Első string"> </td>
+            </tr>
+            <tr>
+        <td> <button onclick= "rando()" >Kiszámolás</button> </td>
+            </tr>
+      </table>
+      </div> 
+    
+<script src="script/random.js"></script>
+
 
   </body>
 
