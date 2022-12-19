@@ -20,9 +20,16 @@ function ar() {
     arak[4] = parseInt(document.getElementById("2.5").value);
  
     const atlag = arak.reduce((a, b) => a + b, 0) / arak.length;
-    const szoras = getStandardDeviation(arak)
+    const szoras = getStandardDeviation(arak);
     
+    const min = Math.min(...arak)
+    minhely = arak.indexOf(min)
+    legolcsobb = nevek[minhely]
+
     document.getElementById("szoras").innerHTML = "Szórás: " + szoras;
-     document.getElementById("atlag").innerHTML = "Átlagos ár:" + atlag;
+    document.getElementById("atlag").innerHTML = "Átlagos ár:" + atlag;
+    document.getElementById("olcso").innerHTML = "Legolcsóbb termék: " + legolcsobb + " " + min;
+
+
 
 }
