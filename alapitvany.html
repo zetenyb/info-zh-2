@@ -43,7 +43,7 @@
       </tr>
     </table>
     </div>
-    <div class="szoveg" id="Para"></div>
+    <div class="valasz" id="Para"></div>
     <p></p>
     <div class ="szoveg">
       <table stlye="width 550px">
@@ -61,37 +61,69 @@
         </tr>
       </table>
       </div>
-      <div class="szoveg" id="Para2"></div> 
+      <div class="valasz" id="Para2"></div> 
     
     <script src="script/paralelogramma.js"></script>
 
     <div class="cim"><h1>Random kimenet</h1></div> 
  
     <div class ="szoveg">
-      <table stlye="width 550px">
-            <tr>
-            <td> <input type="string" name="1" id="egy" placeholder="Első string"> </td>
-            </tr>
-            <tr>
-            <td> <input type="string" name="2" id="ketto" placeholder="Első string"> </td>
-            </tr>        
-            <tr>
-            <td> <input type="string" name="3" id="harom" placeholder="Első string"> </td>
-            </tr>        
-            <tr>
-            <td> <input type="string" name="4" id="negy" placeholder="Első string"> </td>
-            </tr>        
-            <tr>
-            <td> <input type="string" name="5" id="ot" placeholder="Első string"> </td>
-            </tr>
-            <tr>
-        <td> <button onclick= "rando()" >Kiszámolás</button> </td>
-            </tr>
-      </table>
+     
+        <input type="text" name="text" id="cucc1">
+        <input type="text" name="text" id="cucc2">
+        <input type="text" name="text" id="cucc3"> 
+        <input type="text" name="text" id="cucc4">
+        <input type="text" name="text" id="cucc5">
+        <button onclick="rand()">Sorsolás</button>
+    
       </div> 
+      <p class="valasz" id="pText"></p>
     
 <script src="script/random.js"></script>
 
+<div class="cim"><h1>Termékek</h1></div>
+
+<div class ="szoveg">
+<table>
+  <thead>
+    <tr>
+      <th>Termék neve</th>
+      <th>Termék ára</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" name="nev" id="1.1"></td>
+      <td><input type="number" name="ar" id="2.1"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="nev" id="1.2"></td>
+      <td><input type="number" name="ar" id="2.2"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="nev" id="1.3"></td>
+      <td><input type="number" name="ar" id="2.3"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="nev" id="1.4"></td>
+      <td><input type="number" name="ar" id="2.4"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="nev" id="1.5"></td>
+      <td><input type="number" name="ar" id="2.5"></td>
+    </tr>
+    <tr>
+      <td><button onclick="ar()">Hajrá</button></td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+
+  <div class = "valasz" id="olcso"></div>
+  <div class = "valasz" id="atlag"></div>
+  <div class = "valasz" id="szoras"></div>
+ 
+  <script src="script/arak.js"></script>
 
   </body>
 

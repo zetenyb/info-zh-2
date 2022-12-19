@@ -1,13 +1,30 @@
-function rando() {
-    
-    var arr = new Array (1, 2, 3, 4, 5,)
-    1=document.getElementById ("egy").value
-    2=document.getElementById ("ketto").value
-    3=document.getElementById ("harom").value
-    4=document.getElementById ("negy").value
-    5=document.getElementById ("ot").value
-    
-    const shuffled = [arr].sort(() => 0.5 - Math.random());
-   var randomok =  shuffled.slice(0, 3);
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
 
-  document.getElementById ("randomok").innerHTML= "Három véletlenszerű elem "+ randomok; }
+    while (currentIndex != 0) {
+
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+    return array;
+  }
+  
+
+function rand() {
+
+let egy = document.getElementById("cucc1").value;
+let ketto = document.getElementById("cucc2").value;
+let harom = document.getElementById("cucc3").value;
+let negy = document.getElementById("cucc4").value;
+let ot = document.getElementById("cucc5").value;
+var Arr =[egy, ketto, harom, negy, ot];
+shuffle(Arr);
+const kivalasztott = Arr.slice(0,3)
+
+
+document.getElementById('pText').innerHTML = "Véletlenszerűen választott:" + kivalasztott;
+  
+}
